@@ -21,18 +21,18 @@ import jakarta.ws.rs.core.MediaType;
 @ExtendWith(JulToSLF4DelegateExtension.class)
 public class HelloResourceTest {
 
-    private HelloResource helllResource;
+    private HelloResource helloResource;
 
     @BeforeEach
     public void setup() throws Exception {
-        helllResource = RestClientBuilder.newBuilder().baseUri(new URI("http://localhost:7001/api"))
+        helloResource = RestClientBuilder.newBuilder().baseUri(new URI("http://localhost:7001/api"))
                 .build(HelloResource.class);
     }
 
     @Test
     void tesHello() {
         var expected = "Hello";
-        var actual = helllResource.hello();
+        var actual = helloResource.hello();
         assertEquals(expected, actual);
     }
 
