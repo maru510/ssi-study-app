@@ -12,6 +12,7 @@ public class HelloResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
+        // Helloを返す
         return "Hello";
     }
 }
