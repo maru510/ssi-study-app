@@ -22,6 +22,14 @@
 		<version.plugin.helidon-build-tools>2.3.3</version.plugin.helidon-build-tools>
 	</properties>
 
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/maru510/ssi-study-app</url>
+		</repository>
+	</distributionManagement>
+	
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
