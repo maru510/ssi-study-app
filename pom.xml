@@ -29,7 +29,7 @@
 			<url>https://maven.pkg.github.com/maru510/ssi-study-app</url>
 		</repository>
 	</distributionManagement>
-	
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -138,6 +138,11 @@
 						<id>third-party-license-report</id>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>io.fabric8</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.40.2</version>
 			</plugin>
 		</plugins>
 	</build>
