@@ -147,7 +147,7 @@
 					<registry>ghcr.io</registry>
 					<images>
 						<image>
-							<name>ssi-study-app/hello-app</name>
+							<name>maru510/ssi-study-app</name>
 							<build>
 								<contextDir>${project.basedir}</contextDir>
 							</build>
