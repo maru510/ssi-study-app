@@ -144,9 +144,10 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.40.2</version>
 				<configuration>
+					<registry>ghcr.io</registry>
 					<images>
 						<image>
-							<name>sample/ssi-study-app</name>
+							<name>ssi-study-app/hello-app</name>
 							<build>
 								<contextDir>${project.basedir}</contextDir>
 							</build>
