@@ -143,6 +143,16 @@
 				<groupId>io.fabric8</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.40.2</version>
+				<configuration>
+					<images>
+						<image>
+							<name>sample/ssi-study-app</name>
+							<build>
+								<contextDir>${project.basedir}</contextDir>
+							</build>
+						</image>
+					</images>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
