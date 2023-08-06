@@ -144,7 +144,6 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.40.2</version>
 				<configuration>
-					<registry>ghcr.io</registry>
 					<images>
 						<image>
 							<name>maru510/ssi-study-app</name>
